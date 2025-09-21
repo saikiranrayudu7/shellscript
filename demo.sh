@@ -29,8 +29,14 @@ done
 
 #while loop
 count=1
-while [ count -le 5 ]
+while [ $count -le 5 ]
 do
   echo "Count $count"
   ((count++))
 done
+
+#function
+greet(){
+    echo "Hello $1"
+}
+greet "Sai"
