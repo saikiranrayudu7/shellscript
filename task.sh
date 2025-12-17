@@ -8,7 +8,7 @@ else
    echo "You are a root user"
 fi
 
-sudo yum install mysql
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then
